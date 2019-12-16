@@ -10,8 +10,9 @@ def print_freq(s):
         if not i.isspace():
             freqs[i] += 1
 
-    for i in freqs.keys():
-        print("{} : {}%".format(i, freqs[i] * 100 / len(s)))
+    freqs1 = {k: v for k, v in sorted(freqs.items(), key=lambda item: item[1], reverse=True)}
+    for i in freqs1.keys():
+        print("{} : {}%".format(i, freqs1[i] * 100 / len(s)))
 
 if __name__ == "__main__":
     print('input:')
