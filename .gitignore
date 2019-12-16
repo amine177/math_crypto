@@ -2,3 +2,4 @@
 !*.tex
 !*.py
 !.gitignore
+!ch*/
