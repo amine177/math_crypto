@@ -1,0 +1,23 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\begin{document}
+\noindent Let a, b, c $\in \mathbb{Z}$\\
+
+\noindent(a) $ (a | b) \  \land \ ( b | c ) \Rightarrow  (a | c) $\\
+$(a | b) \land (b|c) \Rightarrow \exists (k, k') \in \mathbb{Z}^2
+\ |\  (b = ka) \land (c = k'b)$\\
+$\Rightarrow c = k'ka\blacksquare$\\
+
+\noindent(b) $ (a|b) \land (b|a) \Rightarrow a = \pm b$\\
+$(a|b) \land (b|a) \Rightarrow \exists (k, k') \in \mathbb{Z}^2
+\ |\ (a = kb) \land (b = k'a)$\\
+$\Rightarrow k'a = ka$\\
+$\Rightarrow (k = k' = 1) \lor (k = k' = -1) \blacksquare$\\
+
+\noindent(c) $(a | b) \land (a|c) \Rightarrow (a|(b+c))
+\land (a|(b-c))$\\
+$(a | b) \land (a|c) \Rightarrow (b + c = a(k + k'))
+\land (b - c = a(k - k'))\blacksquare$
+
+\end{document}
